@@ -1,0 +1,4 @@
+1.Write a RMI Based program to read a file from another machine.
+2.write a RMI based program to send the request to a remote function,
+  to fetch a record from the book database for a particular book and 
+   the send the result to requesting client.

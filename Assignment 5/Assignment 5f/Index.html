@@ -1,0 +1,73 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="f1" action="tocheck">
+<input type="submit" name="sub" value="LOGIN">
+<!--<input type="submit" name="sub" value="REGISTRATION">-->
+              </form>
+</body>
+</html>
+
+Login.jsp
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<%@ page import="java.util.*" %>
+
+<! -->DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%= new Date() %>
+<form name="f1" method="post" action="toLogin">
+USER ID :<input type="text" name="id"><br><br>
+PASSWORD : <input type="text" name="pass"><br><br>
+
+<input type="submit" name="sub"1 value="Login">
+<input type="reset" name="can" value="cancel">
+<input type="checkbox" name="keep" value="keepme"> KEEP ME LOGGED IN
+</form>
+</body>
+</html>
+
+Table.jsp
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<!--  -->DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+HttpSession ses=request.getSession(false);
+String val=(String)ses.getAttribute("direct");
+
+if(val!=null){
+if(val.equals("allow")){
+%>
+<form name="f2" action="totable">
+
+ENTER NO : <input type="text" name="no"> <br> <br>
+<input type="submit" name="sub" value="table it">
+</form>
+
+<%
+}
+}
+else{
+request.getRequestDispatcher("/login.jsp").forward(request,response);
+}
+%>
+</body>
+</html>

@@ -1,0 +1,5 @@
+1.Write a UDP based program to read a file from another machine.
+2.Write a TCP based program to read a file from another machine.
+3.Write a java program to implement Echoserver
+4.write a program to implement chatserver.
+5.Write a program to implements ProxyServer.

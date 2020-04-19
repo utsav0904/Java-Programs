@@ -1,0 +1,6 @@
+1. Write a Java Program to create a Book class. Get all the values of attributes of a several books through an input screen 
+   (Use AWT or Swings, EventHandling for cursor movement & validations. The User Interface should be independent of the 
+   backend datastore i.e. file or DB). Save the data to a file, Books.dat.
+2. Query a record on the basis of bookid or bookname or authorname or publication should be possible. The data be retrieved  
+   from the Books.dat file and displayed in GUI. Also update the records. Deletion of any book record should also be possible.
+

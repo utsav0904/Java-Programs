@@ -1,0 +1,9 @@
+1.Write a servlet program to get current time of server  machine.
+2.Write A servlet to send the bookid from client,fetch client,fetch 
+   the book details from server and display the results on client.
+
+3.Write a servlet program to allow or disallow the user based on 
+  security    policies to fetch the data
+4.Write a servlet program to create and use session handling for the 
+   using login.Session handling should be implemented using cookies
+    and httpsession both.

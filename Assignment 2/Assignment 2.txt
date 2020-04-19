@@ -1,0 +1,6 @@
+Connect  to database and create a Book table.
+Perform the operation of insertion,deletion,updation and query on Book table.
+Write PL/SQL code to perform the change in price of books.
+For book with price above RS.500,increase the price by 10%.
+For book with price 500 , increase price by 5%.
+
